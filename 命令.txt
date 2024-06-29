@@ -7,28 +7,3 @@ activate yolo8
 pip install ultralytics
 
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-
-1080/100/100
-
-
-[内存爆炸
-    This probably means that you are not using fork to start your
-    child processes and you have forgotten to use the proper idiom
-    in the main module:
-
-        if __name__ == '__main__':
-            freeze_support()
-            ...
-
-    The "freeze_support()" line can be omitted if the program
-    is not going to be frozen to produce an executable.
-
-        raise RuntimeError(f'DataLoader worker (pid(s) {pids_str}) exited unexpectedly') from e
-RuntimeError: DataLoader worker (pid(s) 24440) exited unexpectedly
-
-https://blog.csdn.net/qq_56508207/article/details/129543912
-]
-
-YOLO训练得到权重后无法检测detect目标
-https://blog.csdn.net/qq_56508207/article/details/129543912
-
